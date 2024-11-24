@@ -1,0 +1,367 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+body {
+
+    background: url('coding-screenshot.jpg') no-repeat center center fixed;
+
+    background-size: cover;
+
+    color: #ffffff;
+
+    overflow-x: hidden;
+
+    background-color: #1e1e1e;
+
+}
+
+header {
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background: rgba(0, 0, 0, 0.85);
+
+}
+
+.name-box {
+
+    display: inline-block;
+
+    padding: 10px;
+
+    border: 3px solid #6d4c41;
+
+    margin: 10px;
+
+    background: rgba(33, 33, 33, 0.8);
+
+    border-radius: 10px;
+
+}
+
+#typing-heading {
+
+    font-size: 2.5em;
+
+    color: #ffca28;
+
+    margin-top: 20px;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    border-right: 3px solid #ffca28;
+
+    width: 0;
+
+    animation: typing 4s steps(20, end), blink-caret 0.75s step-end infinite;
+
+}
+
+@keyframes typing {
+
+    from { width: 0; }
+
+    to { width: 16ch; }
+
+}
+
+@keyframes blink-caret {
+
+    from, to { border-color: transparent; }
+
+    50% { border-color: #ffca28; }
+
+}
+
+.tagline {
+
+    font-size: 1.8em;
+
+    margin-top: 20px;
+
+    animation: fadeIn 1s ease-in-out;
+
+}
+
+.quote {
+
+    font-size: 1.5em;
+
+    margin-top: 20px;
+
+    animation: fadeIn 1s ease-in-out;
+
+    color: #ffca28;
+
+}
+
+@keyframes fadeIn {
+
+    from { opacity: 0; }
+
+    to { opacity: 1; }
+
+}
+
+.form-container {
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    border: 3px solid #ffca28;
+
+    box-shadow: 0 0 15px rgba(255, 111, 0, 0.8);
+
+}
+
+.input-box {
+
+    margin-bottom: 20px;
+
+    position: relative;
+
+}
+
+.input-box label {
+
+    color: #ffca28;
+
+    font-size: 1.2em;
+
+    margin-bottom: 10px;
+
+    display: block;
+
+}
+
+.input-box input, .input-box textarea {
+
+    width: 100%;
+
+    padding: 15px;
+
+    font-size: 1em;
+
+    color: #ffffff;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    border: 2px solid #ff6f00;
+
+    border-radius: 10px;
+
+    transition: 0.3s ease-in-out;
+
+}
+
+.input-box input:focus, .input-box textarea:focus {
+
+    border-color: #ffca28;
+
+    box-shadow: 0 0 10px rgba(255, 202, 40, 0.8);
+
+}
+
+.animated-button {
+
+    background: linear-gradient(45deg, #007bb5, #3399ff); /* Change to blue dim gradient */
+
+    border: none;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    border-radius: 10px;
+
+    animation: pulse 2s infinite;
+
+    display: block;
+
+    margin: 0 auto;
+
+}
+
+@keyframes pulse {
+
+    0% {
+
+        transform: scale(1);
+
+        box-shadow: 0 0 10px #007bb5, 0 0 20px #3399ff;
+
+    }
+
+    100% {
+
+        transform: scale(1.05);
+
+        box-shadow: 0 0 20px #007bb5, 0 0 40px #3399ff;
+
+    }
+
+}
+
+#confirmation-modal {
+
+    background-color: #f44336;
+
+    color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    display: none;
+
+    text-align: center;
+
+}
+
+#confirmation-modal.active {
+
+    display: block;
+
+}
+
+#cancel-button {
+
+    margin-top: 10px;
+
+    padding: 10px 20px;
+
+    background-color: #000;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.story-container {
+
+    text-align: center;
+
+    margin-top: 50px;
+
+    padding: 20px;
+
+}
+
+.story-container h2 {
+
+    font-size: 2em;
+
+    margin-bottom: 20px;
+
+    color: #ffca28;
+
+}
+
+.story-container .story {
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+
+}
+
+.website-list {
+
+    text-align: center;
+
+    margin-top: 50px;
+
+    padding: 20px;
+
+}
+
+.website-list h2 {
+
+    font-size: 2em;
+
+    margin-bottom: 20px;
+
+    color: #ffca28;
+
+}
+
+.website-list ul {
+
+    list-style: none;
+
+    padding: 0;
+
+}
+
+.website-list ul li {
+
+    margin: 10px 0;
+
+    font-size: 1.2em;
+
+}
+
+.website-list ul li a {
+
+    color: #ffca28;
+
+    text-decoration: none;
+
+    transition: 0.3s ease-in-out;
+
+}
+
+.website-list ul li a:hover {
+
+    color: #ffffff;
+
+    text-decoration: underline;
+
+}
+
+footer {
+
+    text-align: center;
+
+    margin-top: 50px;
+
+    padding: 20px;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+footer p {
+
+    font-size: 1em;
+
+    color: #ffffff;
+
+}
